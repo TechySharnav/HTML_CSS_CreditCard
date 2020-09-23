@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    background: #a3b5cc99;
+}
+
+/*Chrome*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35rem;
+    height: 21rem;
+    border-radius: 30px;
+    background: linear-gradient(140deg, #7F3E93, #C92638);
+    color: #ffffff;
+    padding: 3rem;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(40px);
+    z-index: -1;
+}
+
+.card_visa {
+    width: 4rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+.card_flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_input label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 900;
+    margin-bottom: 0.4rem;
+}
+
+.card_input input {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font: 1.3rem;
+    width: 100%;
+    font-weight: 100;
+}
+
+.card_number {
+    margin-top: 5rem;
+}
+
+.card_number input {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+}

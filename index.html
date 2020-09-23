@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Interactive Credit Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <img src="visa.png" class="card_visa" alt="Visa>">
+        <div class="card_input card_number"><label for="Card Number">Card Number</label>
+            <input onkeydown="addDash()" id="cardNum" type="number" minlength="0" maxlength="19">
+        </div>
+
+        <div class="card_flex">
+            <div class="card_input">
+                <label for="Holder">Holder</label>
+                <input type="text" value="Your Name" id="holder" onfocus="this.value=''">
+            </div>
+            <div class="card_input">
+                <label for="Expires">Expires</label>
+                <input type="text" value="MM/YY" id="expires" onfocus="this.value=''">
+            </div>
+            <div class="card_input">
+                <label for="cvc">CVC</label>
+                <input type="text" value="XXX" id="cvc" onfocus="this.value=''">
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+
+</html>
